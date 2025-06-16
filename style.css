@@ -1,0 +1,87 @@
+ody {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f0f0f0;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #pontos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .ponto {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .estado {
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    display: inline-block;
+  }
+  
+  .estado.disponivel {
+    background: #d4edda;
+    color: #155724;
+  }
+  
+  .estado.quase-cheio {
+    background: #fff3cd;
+    color: #856404;
+  }
+  
+  .estado.lotado {
+    background: #f8d7da;
+    color: #721c24;
+  }
+  
+  button {
+    margin: 0.3rem;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:focus {
+    outline: 2px solid #000;
+  }
+  
+  .add {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .remove {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .detalhes {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .modal.hidden {
+    display: none;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 999;
+  }
